@@ -11,14 +11,6 @@ module.exports = function getZerosCount(number, base) {
     }
       else {i++};
   };
-  while (i<=base){
-   if (base % i == 0){
-   mas.push([i])
-   base=base / i;
-  }
-   else {
-     i++};
-  };  
   let x=Math.max(...mas) / 1;
   let y=mas.filter(item => item ==x).length / 1
   let a=mas.filter(item => item ==2).length / 1
